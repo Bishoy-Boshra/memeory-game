@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/bisho.icon.png" />
+  </head>
+
+  <body>
+    <!--start game Button -->
+    <div class="control-button">
+      <span> Start Game</span>
+    </div>
+    <!-- game over  -->
+    <div class="game-over">
+      <span>Game Over </span>
+      <!-- <br /> -->
+      <button>try again</button>
+    </div>
+    <div class="congratulation">
+      <span>Congratulation</span>
+      <span class="time-token"></span>
+      <!-- <br /> -->
+      <button>Play Again</button>
+    </div>
+
+    <!--the header to Game with info -->
+    <header class="container">
+      <div class="name">Hello: <span></span></div>
+      <div class="timer"><span class="minute">0</span>:<span>00</span></div>
+      <div class="tries">Wrong Tries : <span>0</span></div>
+    </header>
+    <!--start Game Images ======================================-->
+    <section class="container memory-game-blocks">
+      <!-- the body to Game  (--1--)-->
+      <div class="game-blocke" data-game="car">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/car.jfif" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="car">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/car.jfif" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--2--)-->
+      <div class="game-blocke" data-game="code">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/code.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="code">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/code.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--3--)-->
+      <div class="game-blocke" data-game="single-smile">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/happy-single-smile.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="single-smile">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/happy-single-smile.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--4--)-->
+      <div class="game-blocke" data-game="hello-smile">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/hello-smile.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="hello-smile">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/hello-smile.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--5--)-->
+      <div class="game-blocke" data-game="planet">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/planet.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="planet">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/planet.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--6--)-->
+      <div class="game-blocke" data-game="skull">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/skull.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="skull">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/skull.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--7--)-->
+      <div class="game-blocke" data-game="smiles">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/smiles.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="smiles">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/smiles.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--8--)-->
+      <div class="game-blocke" data-game="sponge-pop">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/sponge-pop.jfif" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="sponge-pop">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/sponge-pop.jfif" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--9--)-->
+      <div class="game-blocke" data-game="triangle">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/triangle.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="triangle">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/triangle.jpg" alt="" />
+        </div>
+      </div>
+      <!-- the body to Game  (--10--)-->
+      <div class="game-blocke" data-game="windos">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/windos.jfif" alt="" />
+        </div>
+      </div>
+      <div class="game-blocke" data-game="windos">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./images/windos.jfif" alt="" />
+        </div>
+      </div>
+    </section>
+    <audio src="./sounds/audience_applause_big-theatre-54753.mp3" preload="auto"></audio>
+    <audio src="./sounds/uh-oh-101117.mp3" preload="auto"></audio>
+    <audio src="./sounds/yeah-boy-memes-comedy-funny-amusing-jokes-114748.mp3" preload="auto"></audio>
+    <audio src="./sounds/oh-no-113125.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+  </body>
+
+</html>
